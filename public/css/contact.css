@@ -85,7 +85,7 @@ textarea {
 
 /* Button */
 .submit-btn1 {
-    background: #d9534f;
+    background: #DB4444;
     color: #fff;
     padding: 8px 12px;
     border: none;
@@ -97,7 +97,7 @@ textarea {
 }
 
 .submit-btn1:hover {
-    background: #c9302c;
+    background: #DB4444;
 }
 
 /* Responsive Design */
