@@ -30,11 +30,13 @@
             </div>
 
             <!-- Search Box -->
-            <form class="d-flex mx-3">
-                <input class="form-control search-box" type="search" placeholder="What are you looking for?">
-                <button class="btn icon-btn" type="submit"><i class="bi bi-search"></i></button>
-            </form>
-
+            <div class="position-relative mx-3">
+                <input class="form-control search-box pe-5" type="search" placeholder="What are you looking for?">
+                <button class="btn position-absolute end-0 top-50 translate-middle-y me-2" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            
             <!-- Icons (Wishlist, Cart, Profile) -->
             <button class="btn icon-btn"><i class="bi bi-heart"></i></button>
             <button class="btn icon-btn"><i class="bi bi-cart"></i></button>
