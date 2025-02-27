@@ -1,0 +1,64 @@
+/* Custom styles for the profile edit page */
+body {
+    background-color: white; /* Light gray background */
+    padding-top: 70px;
+}
+
+/* Sidebar styles */
+.list-group-item {
+    background: none !important;
+    border: none !important;
+    padding: 5px 0; /* Adjust spacing */
+    font-size: 14px;
+}
+
+/* Make links look normal */
+.sidebar .list-group-item a {
+    text-decoration: none;
+    color: black;
+    display: block; /* Make entire item clickable */
+    padding: 5px 0;
+}
+
+/* Remove active background color */
+.sidebar .list-group-item.active {
+    background: none !important;
+    color: black !important;
+    font-weight: bold; /* Just bold the active link */
+}
+
+
+/* Form Styling */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+.form-control {
+    border-radius: 6px;
+}
+
+/* Buttons */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}

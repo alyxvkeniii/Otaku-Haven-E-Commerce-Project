@@ -1,262 +1,89 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Page Layout */
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background: linear-gradient(135deg, #1c1c2b, #2b2b42);
-    color: white;
-}
-
-/* Header */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fb7185;
-    padding: 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Sidebar */
-.sidebar {
+.navbar-custom {
+    background: white;
+    padding: 10px 40px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
-    left: -250px;
+    z-index: 1000;
     top: 0;
-    width: 250px;
-    height: 100%;
-    background: rgba(34, 34, 34, 0.7); /* Semi-transparent dark */
-    backdrop-filter: blur(10px); /* Blurry glass effect */
-    transition: 0.3s ease-in-out;
-    padding-top: 60px;
-    border-right: 2px solid rgba(255, 255, 255, 0.2); /* Optional: soft glowing border */
-}
-
-/* Sidebar when active */
-.sidebar.active {
     left: 0;
-}
-
-/* Sidebar Links */
-.sidebar a {
-    display: block;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
-}
-
-.sidebar a:hover {
-    background: rgba(251, 113, 133, 0.4); /* Semi-transparent pink hover */
-    border-left: 4px solid #fb7185; /* Glowing left border */
-}
-
-/* Sidebar Logo */
-.sidebar .logo {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-}
-
-.sidebar .logo img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-}
-
-/* Navigation Toggle */
-.nav-toggle {
-    font-size: 1.8rem;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-/* Search Bar */
-.search-container {
-    display: flex;
-    align-items: center;
-    background: white;
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.search-input {
-    outline: none;
-    border: none;
-    padding: 0.3rem;
-    width: 10rem;
-}
-
-.search-button {
-    background: none;
-    border: none;
-    color: #fb7185;
-    cursor: pointer;
-}
-
-/* Header Buttons */
-.header-buttons {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-}
-
-/* Track Order Button */
-.button {
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    background: white;
-    color: black;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.button:hover {
-    background: #fb7185;
-    color: white;
-}
-
-/* Cart Icon */
-.cart-icon {
-    font-size: 1.8rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.cart-icon:hover {
-    color: #ffcc00;
-}
-
-/* Login & Signup Button */
-.login-btn {
-    padding: 8px 16px;
-    border-radius: 8px;
-    background: white;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.login-btn:hover {
-    background: #fb7185;
-    color: white;
-}
-
-/* Main Content Styling */
-.content {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Merchandise Section */
-.merch-section h2 {
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
-    color: #ffcc00;
-}
-
-.merch-section p {
-    font-size: clamp(1rem, 4vw, 1.5rem);
-    margin-top: 10px;
-    color: #dddddd;
-}
-
-/* Shop Now Button */
-.shop-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #ff4081;
-    color: white;
-    border: none;
-    font-size: clamp(1rem, 4vw, 1.5rem);
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
-
-.shop-btn:hover {
-    background: #ff6699;
-}
-
-
-/* Footer Styling */
-.footer {
     width: 100%;
-    padding: 15px 0;
-    background: #fb7185;
-    text-align: center;
-    color: white;
-    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-    box-shadow: 0 -4px 10px 6px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+}
+.search-box {
+    width: 250px;
+    background: #f8f8f8;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 15px;
+}
+.icon-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+.icon-btn:hover {
+    background: #dc3545; /* Red hover effect */
+    color: white; /* Text/icon color changes to white */
+}
+.profile-btn {
+    color: black;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+}
+.profile-btn:hover {
+    background: #dc3545; /* Red hover effect */
+    color: white; /* Text/icon color changes to white */
+}
+.email-subscribe {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
 }
 
-/* Social Media Links */
-.social-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.social-links li {
-    display: inline-block;
-}
-
-.social-links a {
-    font-size: 1.5rem;
+.email-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Extra space for button */
+    border: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
     color: white;
-    transition: 0.3s ease-in-out;
+    outline: none;
 }
 
-.social-links a:hover {
-    color: #ffcc00; /* Change color on hover */
+.email-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
-
-/* Additional Responsive Adjustments */
-@media (max-width: 768px) {
-    .header {
-        font-size: clamp(1rem, 3.5vw, 1.8rem);
-    }
-    .merch-section h2 {
-        font-size: clamp(1.3rem, 4.5vw, 2rem);
-    }
-    .shop-btn {
-        font-size: clamp(0.9rem, 4vw, 1.3rem);
-        padding: 8px 16px;
-    }
-    .search-container {
-        display: none;
-    }
-    .mobile-search {
-        display: block;
-    }
+.send-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.footer {
+    background: #000;
+    color: rgb(255, 255, 240);
+    padding: 40px 0;
+    margin-top: 50px;
+}
+.footer a {
+    color:  rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.footer p {
+    color:  rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
 }
