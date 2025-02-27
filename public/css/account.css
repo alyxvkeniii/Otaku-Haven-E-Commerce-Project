@@ -8,16 +8,29 @@ body {
 .list-group-item {
     background: none !important;
     border: none !important;
-    padding: 5px 0; /* Adjust spacing */
+    padding: 5px 0;
     font-size: 14px;
+    color: black !important; /* Default color */
+}
+
+/* Hover effect: Change text color to red when hovered */
+.list-group-item:hover {
+    color: red !important;
+    text-decoration: none;
 }
 
 /* Make links look normal */
-.sidebar .list-group-item a {
-    text-decoration: none;
-    color: black;
-    display: block; /* Make entire item clickable */
+.list-group-item a {
+    text-decoration: none !important; /* Remove underline */
+    color: black !important; /* Default color */
+    display: block; /* Make the whole item clickable */
     padding: 5px 0;
+    margin-left: 20px;
+}
+
+/* Hover effect: Change text color to red */
+.list-group-item a:hover {
+    color: red !important;
 }
 
 /* Remove active background color */
@@ -37,8 +50,10 @@ body {
 .card-header {
     font-size: 18px;
     font-weight: bold;
+    background: none !important;
+    color: #dc3545 !important;
+    padding: 20px;
 }
-
 /* Input Fields */
 .form-control {
     border-radius: 6px;

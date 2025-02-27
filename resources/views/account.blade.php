@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="{{ asset('css/account.css') }}">
 @endsection
 
-
 @section('content')
 <div class="container mt-5">
     <div class="row">
@@ -12,7 +11,7 @@
         <div class="col-md-3">
             <h6>Manage My Account</h6>
             <ul class="list-group">
-                <li class="list-group-item active">My Profile</li>
+                <li class="list-group-item"><a href="#">My Profile</a></li>
                 <li class="list-group-item"><a href="#">Address Book</a></li>
                 <li class="list-group-item"><a href="#">My Payment Options</a></li>
             </ul>
