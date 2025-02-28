@@ -25,7 +25,7 @@
 .info-box {
     background: #fff;
     padding: 12px;
-    border-left: 3px solid #d9534f;
+    border-left: 3px solid #db4444;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-align: left;
@@ -44,7 +44,7 @@
 
 .icon1 {
     font-size: 16px;
-    color: #d9534f;
+    color: #db4444;
     margin-right: 5px;
 }
 
@@ -97,7 +97,7 @@ textarea {
 }
 
 .submit-btn1:hover {
-    background: #DB4444;
+    background: #E07575;
 }
 
 /* Responsive Design */

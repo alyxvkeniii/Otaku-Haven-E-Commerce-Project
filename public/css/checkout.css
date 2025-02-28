@@ -1,0 +1,135 @@
+.checkout-container {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 80px;
+}
+.checkout-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+.checkout-billing, .checkout-summary {
+    flex: 1;
+    min-width: 350px;
+    padding: 20px;
+}
+.checkout-billing {
+    border-right: 1px solid #F5F5F5;
+}
+.checkout-billing h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #DB4444;
+}
+
+.checkout-summary h6 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.checkout-billing label {
+    font-weight: none;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.checkout-billing input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #F5F5F5;
+    font-size: 12px;
+}
+
+.checkout-billing input:focus {
+    border: 1px solid #888; /* Change to a thinner border color */
+    outline: none; /* Remove default browser outline */
+}
+
+
+.checkout-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+.checkout-checkbox input {
+    width: 16px;
+    height: 16px;
+}
+.checkout-checkbox label {
+    font-weight: normal;
+}
+.checkout-summary {
+    padding-left: 30px;
+}
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.checkout-total {
+    font-weight: bold;
+    font-size: 14px;
+}
+.checkout-payment {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.checkout-payment img {
+    width: 30px;
+    height: auto;
+}
+.checkout-coupon {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.checkout-coupon input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.checkout-coupon button, .checkout-place-order {
+    background: #DB4444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.checkout-place-order {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .checkout-wrapper {
+        flex-direction: column;
+    }
+    .checkout-billing {
+        border-right: none;
+        border-bottom: 2px solid #F5F5F5;
+        padding-bottom: 20px;
+    }
+    .checkout-summary {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+}

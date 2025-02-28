@@ -15,7 +15,7 @@ body {
 
 /* Hover effect: Change text color to red when hovered */
 .list-group-item:hover {
-    color: red !important;
+    color: #E07575 !important;
     text-decoration: none;
 }
 
@@ -30,7 +30,7 @@ body {
 
 /* Hover effect: Change text color to red */
 .list-group-item a:hover {
-    color: red !important;
+    color: #E07575 !important;
 }
 
 /* Remove active background color */
@@ -51,7 +51,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     background: none !important;
-    color: #dc3545 !important;
+    color: #db4444 !important;
     padding: 20px;
 }
 /* Input Fields */
@@ -61,17 +61,18 @@ body {
 
 /* Buttons */
 .btn-danger {
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #db4444;
+    border-color: #db4444;
 }
 
 .btn-danger:hover {
-    background-color: #c82333;
+    background-color: #E07575;
 }
 
 .btn-secondary {
-    background-color: #6c757d;
-    border-color: #6c757d;
+    background-color: transparent;
+    border-color: transparent;
+    color: #000000;
 }
 
 .btn-secondary:hover {

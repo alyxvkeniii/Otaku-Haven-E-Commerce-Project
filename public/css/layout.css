@@ -23,7 +23,7 @@
     margin-left: 10px;
 }
 .icon-btn:hover {
-    background: #dc3545; /* Red hover effect */
+    background: #E07575;
     color: white; /* Text/icon color changes to white */
 }
 .profile-btn {
@@ -36,7 +36,7 @@
     justify-content: center;
 }
 .profile-btn:hover {
-    background: #dc3545; /* Red hover effect */
+    background: #E07575;
     color: white; /* Text/icon color changes to white */
 }
 .email-subscribe {

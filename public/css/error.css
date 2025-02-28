@@ -32,7 +32,7 @@ p {
 .btn1 {
     display: inline-block;
     text-decoration: none;
-    background-color: #dc3545;
+    background-color: #db4444;
     color: white;
     padding: 12px 24px;
     border-radius: 5px;
@@ -41,7 +41,7 @@ p {
 }
 
 .btn1:hover {
-    background-color: #c82333;
+    background-color: #e07575;
 }
 
 @media (max-width: 480px) {
