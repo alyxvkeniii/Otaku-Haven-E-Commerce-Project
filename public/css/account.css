@@ -1,0 +1,80 @@
+/* Custom styles for the profile edit page */
+body {
+    background-color: white; /* Light gray background */
+    padding-top: 70px;
+}
+
+/* Sidebar styles */
+.list-group-item {
+    background: none !important;
+    border: none !important;
+    padding: 5px 0;
+    font-size: 14px;
+    color: black !important; /* Default color */
+}
+
+/* Hover effect: Change text color to red when hovered */
+.list-group-item:hover {
+    color: #E07575 !important;
+    text-decoration: none;
+}
+
+/* Make links look normal */
+.list-group-item a {
+    text-decoration: none !important; /* Remove underline */
+    color: black !important; /* Default color */
+    display: block; /* Make the whole item clickable */
+    padding: 5px 0;
+    margin-left: 20px;
+}
+
+/* Hover effect: Change text color to red */
+.list-group-item a:hover {
+    color: #E07575 !important;
+}
+
+/* Remove active background color */
+.sidebar .list-group-item.active {
+    background: none !important;
+    color: black !important;
+    font-weight: bold; /* Just bold the active link */
+}
+
+
+/* Form Styling */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-size: 18px;
+    font-weight: bold;
+    background: none !important;
+    color: #db4444 !important;
+    padding: 20px;
+}
+/* Input Fields */
+.form-control {
+    border-radius: 6px;
+}
+
+/* Buttons */
+.btn-danger {
+    background-color: #db4444;
+    border-color: #db4444;
+}
+
+.btn-danger:hover {
+    background-color: #E07575;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: transparent;
+    color: #000000;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
