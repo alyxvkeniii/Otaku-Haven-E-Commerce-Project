@@ -269,5 +269,130 @@
    </div>
   </div>
 <hr>
+    <!-- Services Section -->
+    <div class="flex flex-col md:flex-row justify-around items-center py-12 bg-white mt-10 mb-10">
+        <div class="text-center mb-8 md:mb-0 ">
+            <div class="flex justify-center mb-4">
+                <i class="fas fa-truck fa-2x"></i>
+            </div>
+            <h3 class="font-bold text-lg text-pink">FREE AND FAST DELIVERY</h3>
+            <p class="text-sm">Free delivery for all orders over $140</p>
+        </div>
+        <div class="text-center mb-8 md:mb-0">
+            <div class="flex justify-center mb-4">
+                <i class="fas fa-headset fa-2x text-black"></i>
+            </div>
+            <h3 class="font-bold text-lg">24/7 CUSTOMER SERVICE</h3>
+            <p class="text-sm">Friendly 24/7 customer support</p>
+        </div>
+        <div class="text-center">
+            <div class="flex justify-center mb-4">
+                <i class="fas fa-check-circle fa-2x text-black"></i>
+            </div>
+            <h3 class="font-bold text-lg">MONEY BACK GUARANTEE</h3>
+            <p class="text-sm">We return money within 30 days</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    
+  <footer class="py-6">
+   <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-center bg-black text-white">
+    <div>
+     <h2 class="text-lg font-bold mb-2 mt-3">
+      Otaku Haven
+     </h2>
+     <p class="mb-1">
+      Subscribe
+     </p>
+     <p class="mb-2">
+      Get 10% off your first order
+     </p>
+     <form class="flex justify-center">
+      <input class="p-2 rounded-l bg-gray-800 text-white focus:outline-none" placeholder="Enter your email" type="email"/>
+      <button class="p-2 bg-gray-700 rounded-r" type="submit">
+       <i class="fas fa-arrow-right">
+       </i>
+      </button>
+     </form>
+    </div>
+    <div class="text-center">
+     <h2 class="text-lg font-bold mb-2 mt-3">
+      Support
+     </h2>
+     <p>
+      123 Rizal Street, Barangay 27, Legazpi City, Albay
+     </p>
+     <p>
+      OtakuHaven@gmail.com
+     </p>
+     <p>
+      +88015-88888-9999
+     </p>
+    </div>
+    <div>
+     <h2 class="text-lg font-bold mb-2 mt-3">
+      Account
+     </h2>
+     <ul>
+      <li class="mb-1">
+       <a class="hover:underline" href="#">
+        My Account
+       </a>
+      </li>
+      <li class="mb-1">
+       <a class="hover:underline" href="#">
+        Login / Register
+       </a>
+      </li>
+      <li class="mb-1">
+       <a class="hover:underline" href="#">
+        Cart
+       </a>
+      </li>
+      <li class="mb-1">
+       <a class="hover:underline" href="#">
+        Wishlist
+       </a>
+      </li>
+      <li class="mb-1">
+       <a class="hover:underline" href="#">
+        Shop
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h2 class="text-lg font-bold mb-2 mt-3">
+      Quick Link
+     </h2>
+     <ul>
+      <li class="mb-1">
+       <a class="hover:underline" href="#">
+        Privacy Policy
+       </a>
+      </li>
+      <li class="mb-1">
+       <a class="hover:underline" href="#">
+        Terms Of Use
+       </a>
+      </li>
+      <li class="mb-1">
+       <a class="hover:underline" href="#">
+        FAQ
+       </a>
+      </li>
+      <li class="mb-1">
+       <a class="hover:underline" href="#">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="text-center mt-6 bg-black text-gray-100 mb-auto">
+    <p>© Copyright Otaku Haven 2025. All right reserved</p>
+   </div>
+  </footer>
  </body>
 </html>
