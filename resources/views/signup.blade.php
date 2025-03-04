@@ -12,11 +12,11 @@
     <div class="container">
         <div class="left-section">
             <div class="logo">
-                <img src="{{ asset('css/bibimeow.jpg') }}" alt="Logo">
+                <img src="{{ asset('images/bibimeow.jpg') }}" alt="Logo">
             </div>
             <h2>Enter the Otaku Realm</h2>
             <div class="circle">
-                <img src="{{ asset('css/bibimeow.jpg') }}" alt="Mascot">
+                <img src="{{ asset('images/OIP.jpg') }}" alt="Mascot">
             </div>
         </div>
         <div class="right-section">

@@ -12,11 +12,11 @@
     <div class="container">
         <div class="left-section">
             <div class="logo">
-                <img src="{{ asset('css/bibimeow.jpg') }}" alt="Logo">
+                <img src="{{ asset('images/bibimeow.jpg') }}" alt="Logo">
             </div>
-            <h2>Welcome Back Senpai Shopper</h2>
+            <h2>Welcome Back Senpai</h2>
             <div class="circle">
-                <img src="{{ asset('css/bibimeow.jpg') }}" alt="Mascot">
+                <img src="{{ asset('images/OIP.jpg') }}" alt="Mascot">
             </div>
         </div>
         <div class="right-section">
@@ -37,8 +37,12 @@
             </form>
             <div class="divider">or</div>
             <div class="social-buttons">
-                <button class="fb-btn">Login with Facebook</button>
-                <button class="google-btn">Login with Google</button>
+                <button class="fb-btn">
+                    <i class="fa-brands fa-facebook"></i> Sign Up with Facebook
+                </button>
+                <button class="google-btn">
+                    <i class="fa-brands fa-google"></i> Sign Up with Google
+                </button>
             </div>
         </div>
     </div>
