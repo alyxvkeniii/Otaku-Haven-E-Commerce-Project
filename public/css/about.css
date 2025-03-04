@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.otaku-story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+    padding: 40px;
+}
+
+.otaku-content {
+    max-width: 500px;
+}
+
+.otaku-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.otaku-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.otaku-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background: #fff;
+    transition: 0.3s;
+    padding: 15px;
+}
+
+.stat-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.stat-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stat-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.stat-card:hover {
+    background: #E07575;
+    color: white;
+    border: none;
+}
+
+.stat-card:hover p {
+    color: white;
+}
+
+.unique-team-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.unique-team-section .team-member {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 250px;
+    flex: 1 1 300px;
+}
+
+.unique-team-section .team-member:hover {
+    transform: translateY(-5px);
+}
+
+.unique-team-section .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.unique-team-section .team-member h3 {
+    font-size: 1.5rem;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.unique-team-section .team-member p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .unique-team-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .unique-team-section .team-member {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .unique-team-section {
+        padding: 20px;
+    }
+
+    .unique-team-section .team-member {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .unique-team-section .team-member h3 {
+        font-size: 1.3rem;
+    }
+
+    .unique-team-section .team-member p {
+        font-size: 0.9rem;
+    }
+}
+
+.full-services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 50px 0px;
+  }
+  
+  .frame-701, .frame-702, .frame-703 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .services {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    position: relative;
+  }
+  
+  .ellipse-6, .ellipse-5 {
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ellipse-6 {
+    background: var(--primary-1, #2f2e30);
+    opacity: 0.3;
+  }
+  
+  .ellipse-5 {
+    background: var(--button, #000000);
+    width: 72.5%;
+    height: 72.5%;
+    right: 13.75%;
+    left: 13.75%;
+    bottom: 13.75%;
+    top: 13.75%;
+  }
+  
+  .icon-delivery, .icon-customer-service, .icon-secure img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 25%;
+    left: 25%;
+    bottom: 25%;
+    top: 25%;
+  }
+  
+  .frame-695, .frame-696, .frame-697 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .full-services {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .full-services {
+      gap: 16px;
+    }
+  
+    .frame-701, .frame-702, .frame-703 {
+      width: 90%;
+      text-align: center;
+    }
+  
+    .free-and-fast-delivery, ._24-7-customer-service, .money-back-guarantee {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    .free-delivery-for-all-orders-over-140, .friendly-24-7-customer-support, .we-reurn-money-within-30-days {
+      font-size: 14px;
+    }
+  }
+  
